@@ -24,6 +24,10 @@ WORKDIR /app
 
 RUN pip install --quiet --disable-pip-version-check -r requirements.txt
 
+# must enable REALM=prod to load REDIS_URL
+ENV REALM prod
+RUN sed -i 's/DEBUG = False/DEBUG = True/' requestbin/config.py
+
 ENV PORT 80
 EXPOSE 80
 
