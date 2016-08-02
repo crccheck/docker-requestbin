@@ -1,0 +1,15 @@
+version: '2'
+services:
+  redis:
+    image: redis
+  requestbin:
+    image: crccheck/requestbin
+    # build: .
+    depends_on:
+      - redis
+    environment:
+      REDIS_URL: redis://redis:6370/0
+      # SESSION_SECRET_KEY
+      # BUGSNAG_KEY
+    ports:
+      - "8000:80"
