@@ -32,7 +32,7 @@ Prior Art
 ---------
 
 [goldeneggg/centos-requestbin](https://registry.hub.docker.com/u/goldeneggg/centos-requestbin/):
-This image is 1.503 GB, compared to 174 MB for mine.
+This image is 1.503 GB, compared to 176 MB for mine.
 
 [agaveapi/requestbin](https://registry.hub.docker.com/u/agaveapi/requestbin/):
 very similar to this project now, only uses a fork.

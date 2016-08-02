@@ -1,4 +1,4 @@
-FROM alpine:3.2
+FROM alpine:3.4
 MAINTAINER Chris <c@crccheck.com>
 
 ENV REQUESTBIN_VERSION master
