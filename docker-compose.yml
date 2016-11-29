@@ -8,7 +8,7 @@ services:
     depends_on:
       - redis
     environment:
-      REDIS_URL: redis://redis:6370/0
+      REDIS_URL: redis://redis:6379/0
       # SESSION_SECRET_KEY
       # BUGSNAG_KEY
     ports:
