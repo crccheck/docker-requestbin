@@ -24,9 +24,11 @@ If you wanted to run this manually, it would look something like:
     docker run -d --name requestbin_redis redis
     docker run -d --name requestbin \
       --link requestbin_redis:redis \
+      -p 8080:80 \
       -e REDIS_URL=redis://redis:6379/0 \
       crccheck/requestbin
 
+then you can access via http://localhost:8080/ (you can map any port instead 8080 if you want)
 
 Prior Art
 ---------
